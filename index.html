@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CallWake — The alarm that speaks the time</title>
+<meta name="description" content="CallWake is an alarm clock that speaks the time out loud in your language. By BNC Software.">
+<link rel="icon" href="icon-512.png">
+<style>
+  :root {
+    --bg: #0f1020;
+    --bg-soft: #17182e;
+    --card: rgba(255,255,255,.06);
+    --line: rgba(255,255,255,.12);
+    --ink: #f4f3ff;
+    --muted: #a9a7c8;
+    --accent: #b79cff;
+    --accent-2: #7de3d0;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(1100px 600px at 12% -8%, #2b1d55 0%, transparent 60%),
+      radial-gradient(900px 520px at 92% 6%, #163f45 0%, transparent 62%),
+      var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 940px; margin: 0 auto; padding: 0 22px; }
+  header { padding: 74px 0 22px; }
+  .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 40px; }
+  .brand img { width: 46px; height: 46px; border-radius: 12px; }
+  .brand span { font-weight: 650; letter-spacing: .2px; }
+  h1 {
+    font-size: clamp(2.3rem, 6vw, 3.9rem);
+    line-height: 1.06;
+    margin: 0 0 18px;
+    letter-spacing: -.022em;
+    font-weight: 700;
+  }
+  h1 em {
+    font-style: normal;
+    background: linear-gradient(94deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .lede { font-size: 1.16rem; color: var(--muted); max-width: 60ch; margin: 0 0 34px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .btn {
+    display: inline-block; padding: 12px 22px; border-radius: 999px;
+    text-decoration: none; font-weight: 600; font-size: .95rem;
+    background: linear-gradient(94deg, var(--accent), #8f78ff);
+    color: #17102e; border: 0;
+  }
+  .btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+  .grid {
+    display: grid; gap: 16px; margin: 62px 0 0;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 18px; padding: 22px;
+  }
+  .card h3 { margin: 0 0 8px; font-size: 1.03rem; letter-spacing: -.01em; }
+  .card p { margin: 0; color: var(--muted); font-size: .94rem; }
+  .emoji { font-size: 1.5rem; display: block; margin-bottom: 12px; }
+  section { padding: 58px 0; }
+  h2 { font-size: 1.5rem; letter-spacing: -.015em; margin: 0 0 16px; }
+  .langs { color: var(--muted); font-size: .93rem; line-height: 2; }
+  .pill {
+    display: inline-block; padding: 3px 12px; margin: 0 6px 6px 0;
+    border: 1px solid var(--line); border-radius: 999px; font-size: .84rem;
+  }
+  footer {
+    border-top: 1px solid var(--line); margin-top: 40px;
+    padding: 34px 0 60px; color: var(--muted); font-size: .9rem;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  .foot-links { display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <img src="icon-512.png" alt="CallWake icon">
+      <span>CallWake</span>
+    </div>
+    <h1>The alarm that <em>speaks the time</em> out loud.</h1>
+    <p class="lede">
+      CallWake doesn't just buzz. When it rings, it says what time it is — in your
+      own language. Know the time before you even open your eyes.
+    </p>
+    <div class="cta">
+      <a class="btn" href="privacy-policy.html">Privacy Policy</a>
+      <a class="btn ghost" href="mailto:bncyazilim@gmail.com">Contact support</a>
+    </div>
+  </header>
+
+  <div class="grid">
+    <div class="card">
+      <span class="emoji">🗣️</span>
+      <h3>Speaks your language</h3>
+      <p>Natural spoken time in 29 languages. The voice pack downloads once, then works fully offline.</p>
+    </div>
+    <div class="card">
+      <span class="emoji">⏰</span>
+      <h3>A real alarm</h3>
+      <p>Its own native alarm engine: full-screen over the lock screen, survives deep sleep and reboots.</p>
+    </div>
+    <div class="card">
+      <span class="emoji">🌙</span>
+      <h3>Calm by design</h3>
+      <p>Light and dark themes that follow your system — easy on the eyes at 3 a.m.</p>
+    </div>
+    <div class="card">
+      <span class="emoji">💎</span>
+      <h3>Pro, once</h3>
+      <p>One lifetime payment for unlimited alarms and zero ads. No subscription, ever.</p>
+    </div>
+  </div>
+
+  <section id="languages">
+    <h2>Spoken languages</h2>
+    <div class="langs">
+      <span class="pill">Türkçe</span><span class="pill">English</span>
+      <span class="pill">Deutsch</span><span class="pill">Français</span>
+      <span class="pill">Español</span><span class="pill">Italiano</span>
+      <span class="pill">Português</span><span class="pill">Nederlands</span>
+      <span class="pill">Polski</span><span class="pill">Русский</span>
+      <span class="pill">العربية</span><span class="pill">हिन्दी</span>
+      <span class="pill">日本語</span><span class="pill">한국어</span>
+      <span class="pill">中文</span><span class="pill">Svenska</span>
+      <span class="pill">Norsk</span><span class="pill">Dansk</span>
+      <span class="pill">Suomi</span><span class="pill">Čeština</span>
+      <span class="pill">Ελληνικά</span><span class="pill">Українська</span>
+      <span class="pill">Română</span><span class="pill">Magyar</span>
+      <span class="pill">Bahasa Indonesia</span><span class="pill">Tiếng Việt</span>
+      <span class="pill">ไทย</span><span class="pill">Filipino</span>
+      <span class="pill">Bahasa Melayu</span>
+    </div>
+  </section>
+
+  <section id="support">
+    <h2>Support</h2>
+    <p style="color:var(--muted);max-width:62ch">
+      Questions, bug reports, refund or data-deletion requests — email
+      <a href="mailto:bncyazilim@gmail.com" style="color:var(--accent)">bncyazilim@gmail.com</a>
+      and we'll get back to you. Telling us your device model and Android version
+      helps a lot.
+    </p>
+  </section>
+
+  <footer>
+    <div class="foot-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="data-deletion.html">Data Deletion</a>
+      <a href="mailto:bncyazilim@gmail.com">bncyazilim@gmail.com</a>
+    </div>
+    © 2026 BNC Software · CallWake · <code>tech.bncsoftware.callwake</code>
+  </footer>
+
+</div>
+</body>
+</html>
