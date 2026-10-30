@@ -51,7 +51,7 @@
 <a class="back" href="index.html">← CallWake</a>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: 31 July 2026 · Effective: 31 July 2026</p>
+<p class="updated">Last updated: 30 October 2026 · Effective: 30 October 2026</p>
 <p class="langswitch"><a href="#turkce">Türkçe için buraya tıklayın ↓</a></p>
 
 <p>
@@ -63,7 +63,8 @@
 <div class="box">
   <p><strong>The short version.</strong> CallWake has no user accounts. Your alarms and
   settings never leave your phone. The app talks to our servers only to download the
-  spoken-time voice clips you asked for. Free users see Google AdMob ads, which use your
+  spoken-time voice clips you asked for, and (when open) to look up the weather for your
+  approximate, IP-based city — never your GPS location. Free users see Google AdMob ads, which use your
   device's advertising ID. Paying for Pro removes all ads. We do not sell your data.</p>
 </div>
 
@@ -97,6 +98,25 @@
   profiles from it.
 </p>
 
+<h3>Weather and approximate location (home screen)</h3>
+<p>
+  The home screen shows your city and the current weather. CallWake never asks for the
+  device's location permission and never reads GPS. Instead, when the app is open:
+</p>
+<ul>
+  <li>It asks <strong>GeoJS</strong> (get.geojs.io) which city your internet connection
+      appears to be in. GeoJS necessarily sees your <strong>IP address</strong> for this
+      request, and answers with an approximate city and coordinates.</li>
+  <li>It sends those approximate coordinates (rounded to four decimals) to the
+      <strong>MET Norway</strong> weather service (api.met.no) to get the forecast. MET
+      Norway likewise sees your IP address and the coordinates.</li>
+</ul>
+<p>
+  The city, coordinates and forecast are cached on your phone (about three hours, plus a
+  copy the alarm screen uses to draw the weather) and are never sent to our own servers.
+  We do not link them to you or to any identifier. Weather data is provided by MET Norway.
+</p>
+
 <h3>Advertising (free tier only)</h3>
 <p>
   Free users see a banner and occasional full-screen ads served by <strong>Google
@@ -123,7 +143,7 @@
 <h3>What we do not do</h3>
 <ul>
   <li>No user accounts, sign-in, name, email address, or phone number.</li>
-  <li>No location data of any kind.</li>
+  <li>No access to your device's location (no GPS, no location permission); only the approximate, IP-based city described above.</li>
   <li>No access to your contacts, calendar, photos, microphone, or camera.</li>
   <li>No analytics SDK and no crash-reporting SDK in the app.</li>
   <li>No selling or renting of data to anyone.</li>
@@ -153,6 +173,16 @@
     <td>RevenueCat</td>
     <td>Validates purchase receipts against an anonymous id</td>
     <td><a href="https://www.revenuecat.com/privacy" rel="noopener">revenuecat.com</a></td>
+  </tr>
+  <tr>
+    <td>GeoJS</td>
+    <td>Resolves your IP address to an approximate city and coordinates for the home screen</td>
+    <td><a href="https://www.geojs.io/" rel="noopener">geojs.io</a></td>
+  </tr>
+  <tr>
+    <td>MET Norway (api.met.no)</td>
+    <td>Provides the weather forecast for those approximate coordinates</td>
+    <td><a href="https://www.met.no/en/About-us/privacy" rel="noopener">met.no</a></td>
   </tr>
   <tr>
     <td>Google Cloud Text-to-Speech</td>
@@ -225,7 +255,7 @@
 </p>
 
 <h2 id="turkce">Türkçe — Gizlilik Politikası</h2>
-<p class="updated">Son güncelleme: 31 Temmuz 2026</p>
+<p class="updated">Son güncelleme: 30 Ekim 2026</p>
 
 <p>
   <strong>CallWake</strong> (<code>tech.bncsoftware.callwake</code>),
@@ -237,7 +267,8 @@
 <div class="box">
   <p><strong>Kısaca.</strong> CallWake'te kullanıcı hesabı yoktur. Alarmlarınız ve
   ayarlarınız telefonunuzdan hiç çıkmaz. Uygulama sunucularımıza yalnızca sizin
-  seçtiğiniz konuşma dilinin ses kliplerini indirmek için bağlanır. Ücretsiz
+  seçtiğiniz konuşma dilinin ses kliplerini indirmek ve (açıkken) IP'ye dayalı yaklaşık
+  şehrinizin hava durumunu almak için bağlanır — GPS konumunuz asla kullanılmaz. Ücretsiz
   kullanıcılara, cihazın reklam kimliğini kullanan Google AdMob reklamları gösterilir.
   Pro satın almak tüm reklamları kaldırır. Verilerinizi satmıyoruz.</p>
 </div>
@@ -262,6 +293,18 @@ verileri otomatik olarak alır: IP adresiniz, istenen dil ve ses, temel istek bi
 (zaman damgası, uygulama sürümü, platform). Bunları yalnızca indirmeyi sunmak ve kötüye
 kullanımı tespit etmek için kullanırız; kullanıcı profili oluşturmayız.</p>
 
+<p><strong>Hava durumu ve yaklaşık konum (ana ekran):</strong> Ana ekranda şehriniz ve
+anlık hava durumu gösterilir. CallWake cihazın konum iznini <strong>hiç istemez</strong>
+ve GPS'e erişmez. Bunun yerine uygulama açıkken: (1) internet bağlantınızın hangi şehirde
+göründüğünü <strong>GeoJS</strong>'e (get.geojs.io) sorar — GeoJS bu istek için
+<strong>IP adresinizi</strong> görür ve yaklaşık bir şehir ile koordinat döndürür;
+(2) bu yaklaşık koordinatları (dört ondalığa yuvarlanmış) tahmin almak için
+<strong>MET Norway</strong> hava durumu servisine (api.met.no) gönderir; MET Norway de IP
+adresinizi ve koordinatları görür. Şehir, koordinat ve tahmin telefonunuzda önbelleğe
+alınır (yaklaşık üç saat; ayrıca alarm ekranının hava sahnesini çizmesi için bir kopya) ve
+bizim sunucularımıza hiç gönderilmez; sizinle veya bir kimlikle ilişkilendirmeyiz. Hava
+durumu verisi MET Norway tarafından sağlanır.</p>
+
 <p><strong>Reklamlar (yalnızca ücretsiz kullanım):</strong> Ücretsiz kullanıcılara
 <strong>Google AdMob</strong> tarafından sunulan banner ve ara sıra tam ekran reklamlar
 gösterilir. AdMob, reklam seçmek ve ölçmek için cihazınızın
@@ -278,7 +321,7 @@ buna bağlar; böylece aynı Play hesabında yeniden kurduğunuzda Pro'nuz korun
 adınıza veya e-postanıza bağlı değildir.</p>
 
 <p><strong>Yapmadıklarımız:</strong> Hesap/giriş, ad, e-posta, telefon numarası yok.
-Konum verisi yok. Kişiler, takvim, fotoğraf, mikrofon, kamera erişimi yok. Uygulamada
+Cihaz konumuna erişim yok (GPS ve konum izni yok; yalnızca yukarıdaki yaklaşık, IP'ye dayalı şehir). Kişiler, takvim, fotoğraf, mikrofon, kamera erişimi yok. Uygulamada
 analitik veya çökme raporlama SDK'sı yok. Veri satışı yok. Çocuklara yönelik reklam veya
 izleme yok.</p>
 
@@ -286,7 +329,9 @@ izleme yok.</p>
 <p>
   Bizim adımıza veri işleyenler, her biri kendi gizlilik politikası kapsamında:
   <strong>Google Firebase</strong> (ses paketlerinin barındırılması ve üretilmesi),
-  <strong>Google AdMob</strong> (ücretsiz kullanıcılara reklam), <strong>Google Play
+  <strong>Google AdMob</strong> (ücretsiz kullanıcılara reklam), <strong>GeoJS</strong> (IP adresinizden yaklaşık şehir ve koordinat bulma),
+  <strong>MET Norway</strong> (bu koordinatlar için hava tahmini),
+  <strong>Google Play
   Billing</strong> (satın alma ve ödeme), <strong>RevenueCat</strong> (makbuz
   doğrulama), <strong>Google Cloud Text-to-Speech</strong> (sunucumuzda konuşma
   sesinin üretilmesi — yalnızca söylenecek saat ifadelerini alır, sizinle ilgili
